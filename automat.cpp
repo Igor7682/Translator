@@ -373,7 +373,6 @@ std::vector<tok> Automat::analize1(QString text)
         switch(state)
         {
             case 0:
-            //QTextStream(stdout) << i << Qt::endl;
             if(I1.contains(text[i]))
             {
                 if(I2.contains(text[i]))
@@ -381,8 +380,7 @@ std::vector<tok> Automat::analize1(QString text)
                     switch(text[i].unicode())
                     {
                     case 'i':
-                        //QTextStream(stdout) << i << Qt::endl;
-                        //QTextStream(stdout) << buf << Qt::endl;
+
                         buf += text[i];
                         state = 1;
                         break;
@@ -432,9 +430,6 @@ std::vector<tok> Automat::analize1(QString text)
                         state = 0;
                         break;
                     case ':':
-                        //buf = "";
-                        //t.setTokPar(buf,1);
-                        //LexList.push_back(t);
                         buf = text[i];
                         state = 15;
                         break;
@@ -443,16 +438,14 @@ std::vector<tok> Automat::analize1(QString text)
                         state = 23;
                         break;
                     case '-':
-                        //t.setTokPar(buf,1);
-                        //LexList.push_back(t);
+
                         buf += text[i];
                         state = 9;
                         break;
                     default:
                         buf += text[i];
                         state = 8;
-                        //QTextStream(stdout) << i << Qt::endl;
-                        //QTextStream(stdout) << buf << Qt::endl;
+
                         break;
                     }
                 } else
@@ -896,8 +889,6 @@ std::vector<tok> Automat::analize1(QString text)
                         switch(text[i].unicode())
                         {
                         case 'i':
-                            //QTextStream(stdout) << i << Qt::endl;
-                            //QTextStream(stdout) << buf << Qt::endl;
                             buf = text[i];
                             state = 1;
                             break;
@@ -1012,12 +1003,10 @@ std::vector<tok> Automat::analize1(QString text)
                     {
                         t.setTokPar(buf,3);
                         LexList.push_back(t);
-                        //buf = text[i];
                         switch(text[i].unicode())
                         {
                         case 'i':
-                            //QTextStream(stdout) << i << Qt::endl;
-                            //QTextStream(stdout) << buf << Qt::endl;
+
                             buf = text[i];
                             state = 1;
                             break;
@@ -1089,21 +1078,6 @@ std::vector<tok> Automat::analize1(QString text)
                     buf += text[i];
                     state = 8;
                 }
-
-                break;
-            case 17:
-
-                break;
-            case 18:
-
-                break;
-            case 19:
-
-                break;
-            case 20:
-
-                break;
-            case 21:
 
                 break;
             case 22:
