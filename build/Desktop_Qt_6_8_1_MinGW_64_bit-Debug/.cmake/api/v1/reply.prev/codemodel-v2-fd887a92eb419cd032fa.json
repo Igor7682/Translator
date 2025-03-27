@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-313257e04362330570ed.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Analizator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Analizator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Analizator-Debug-056c1123eb3dd475aa13.json",
+					"name" : "Analizator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Analizator_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Analizator_autogen-Debug-c5a407cd398e611e8979.json",
+					"name" : "Analizator_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Analizator_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Analizator_autogen_timestamp_deps-Debug-9c9e6348a4e11a6dd9ef.json",
+					"name" : "Analizator_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/IGOR/Documents/Analizator/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/IGOR/Documents/Analizator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
