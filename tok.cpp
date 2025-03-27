@@ -1,7 +1,6 @@
 #include "tok.h"
 
 
-
 tok::tok() {}
 
 tok::tok(QString val1,QString type1)
