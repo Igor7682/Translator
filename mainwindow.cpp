@@ -19,7 +19,6 @@ MainWindow::~MainWindow()
 }
 
 
-
 void  MainWindow::analize()
 {
     QString text = ui->textEdit->toPlainText();
